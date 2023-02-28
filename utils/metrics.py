@@ -1,5 +1,6 @@
 import numpy as np
 
 def MSE(predictions: np.ndarray, targets: np.ndarray) -> float:
-    """ Todo calculate loss of your model without loops"""
-    pass
+    """Calculates the mean squared error between predictions and targets."""
+    return np.mean((predictions - targets) ** 2)
+
